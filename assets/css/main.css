@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+.contenedor-iphone {
+  display: grid;
+  background-image: url(/assets/img/iphone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  align-content: center;
+  justify-content: center;
+  margin: 15px auto;
+  height: 660px;
+  width: 330px;
+}
+
+.contenedor-teclas {
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-auto-rows: 70px;
+  grid-auto-flow: row;
+  row-gap: 10px;
+  column-gap: 18px;
+  padding-top: 45px;
+  align-content: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.item {
+  border: 0;
+  border-radius: 100px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.item:active {
+  background-color: rgb(128, 128, 128);
+}
+
+.item:last-child {
+  grid-column-start: 2;
+  background-color: #2ed158;
+}
+.item:last-child:active {
+  background-color: #22b546;
+}
+
+.item p {
+  font-size: 35px;
+  line-height: 30px;
+}
+
+.item span {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.item:nth-child(11) p {
+  margin-top: 5px;
+}
+
+.item:nth-child(11) span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.item img {
+  width: 45%;
+}
