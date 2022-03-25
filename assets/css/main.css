@@ -10,7 +10,7 @@ body {
 
 .contenedor-iphone {
   display: grid;
-  background-image: url(./assets/img/iphone.png);
+  background-image: url(https://clon-teclado-iphone.vercel.app/assets/img/iphone.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
